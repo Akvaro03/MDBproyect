@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Design Bootstrap Template</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->  
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Material Design Bootstrap -->
+  <link href="./css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleProdutos.css">
+
+</head>
+
+<body>
+  <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+    <a href="#top-section" class="btn-floating btn-large red">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+  <!--Main Navigation-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container smooth-scroll">
+          <a class="navbar-brand nombreMarca" href="#"><strong>Tienda generica</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <p class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></p>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#team" data-offset="60">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#products" data-offset="60">Nosotros</a>
+                  </li>
+              </ul>
+              <div class="md-form my-0">
+                <input type="search" id="form-autocomplete" class="form-control mdb-autocomplete">
+                <button class="mdb-autocomplete-clear">
+                  <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </button>
+                <label for="form-autocomplete" class="text-white">Buscador</label>
+              </div>
+              </div>
+      </div>
+    </nav>          
+  <div class="nose">
+    <div class="container-fluid nose row mt-4" style="flex-wrap: nowrap;">
+
+      <div class="col-3 mr-4 opciones">
+              <!-- dropdown -->
+              <!--Dropdown primary-->
+              <div class=" ">
+
+              <!--Trigger-->
+              <button class="btn  hoverable btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="">Procesadores</button>
+
+              <!--Menu-->
+              <div class="dropdown-menu dropdown-primary w-100">
+    <a class="dropdown-item" href="#">Procesadores AMD</a>
+    <a class="dropdown-item" href="#">Coolers CPU</a>
+    <a class="dropdown-item" href="#">Procesadores intel</a>
+    <a class="dropdown-item" href="#">Soluciones termicas</a>
+              </div>
+              </div>
+              <!--/Dropdown primary-->
+              <!--Dropdown primary-->
+              <div class="dropdown w-30">
+
+                <!--Trigger-->
+                <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="">Motherboard</button>
+
+                <!--Menu-->
+                <div class="dropdown-menu dropdown-primary w-100">
+                  <a class="dropdown-item" href="#">Mothers AMD</a>
+                  <a class="dropdown-item" href="#">Mothers Intel</a>
+                </div>
+              </div>
+              <!--/Dropdown primary-->
+              <!--Dropdown primary-->
+              <div class="dropdown w-30">
+
+  <!--Trigger-->
+  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false" style="">Memoria Ram</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary w-100">
+    <a class="dropdown-item" href="#">Memorias</a>
+    <a class="dropdown-item" href="#">Memorias Sodimm</a>
+  </div>
+              </div>
+              <!--/Dropdown primary-->
+              <!--Dropdown primary-->
+              <div class="dropdown w-30">
+
+  <!--Trigger-->
+  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false" style="">Almacenamiento</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary w-100">
+    <a class="dropdown-item" href="#">Discos rigidos externos</a>
+    <a class="dropdown-item" href="#">Pendrives</a>
+    <a class="dropdown-item" href="#">Discos rigidos internos</a>
+    <a class="dropdown-item" href="#">Discos solidos SSD</a>
+  </div>
+              </div>
+              <!--/Dropdown primary-->
+              <!--Dropdown primary-->
+              <div class="dropdown w-30">
+
+  <!--Trigger-->
+  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false" style="">Material dropdown</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary w-100">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+              </div>
+              <!--/Dropdown primary-->
+              <!--Dropdown primary-->
+              <div class="dropdown w-30">
+
+  <!--Trigger-->
+  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false" style="">Placas de videos</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary w-100">
+    <a class="dropdown-item" href="#">Placas de video GeForce</a>
+    <a class="dropdown-item" href="#">Placas de video Radeon AMD</a>
+  </div>
+              </div>
+              <!--/Dropdown primary-->
+      
+      </div>
+      <div class="col-8 col-xs-12" >
+        <div class="row">
+          <select class="mdb-select md-form mt-0 col-7" style="background: black;">
+            <option value="" disabled selected>Ordenar por</option>
+            <option value="1">Mayor precio</option>
+            <option value="2">Menor precio</option>
+            </select>
+            <p class="col-2 nav-link waves-effect waves-light" href="#team" data-offset="60">Productos</p>          </div>
+
+        <div id="productos33" class="cuadrilla2 ">
+
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+                alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+      
+            <!--Card content-->
+            <div class="card-body">
+      
+              <!--Title-->
+              <h4 class="card-title">Card title</h4>
+              <!--Text-->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+            </div>
+      
+          </div>
+          <div class="card">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+    
+          <!--Card content-->
+          <div class="card-body">
+    
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+    
+          </div>
+    
+          </div>
+          <!-- Card Light -->
+          <div class="card">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h4 class="card-title">Card title</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+        
+              </div>
+        
+          </div>
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+                alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+      
+            <!--Card content-->
+            <div class="card-body">
+      
+              <!--Title-->
+              <h4 class="card-title">Card title</h4>
+              <!--Text-->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+              <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+            </div>
+      
+          </div>
+          <div class="card">
+
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+              alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+    
+          <!--Card content-->
+          <div class="card-body">
+    
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+    
+          </div>
+    
+          </div>
+          <div class="card">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+            alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+        <!--Card content-->
+        <div class="card-body">
+  
+          <!--Title-->
+          <h4 class="card-title">Card title</h4>
+          <!--Text-->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+  
+        </div>
+  
+          </div>
+          <div class="card">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Card title</h4>
+        <!--Text-->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+      </div>
+
+          </div>
+          <div class="card">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Card title</h4>
+      <!--Text-->
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+        card's content.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+          </div>
+          <div class="card">
+
+  <!--Card image-->
+  <div class="view overlay">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+      alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!--Card content-->
+  <div class="card-body">
+
+    <!--Title-->
+    <h4 class="card-title">Card title</h4>
+    <!--Text-->
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+      card's content.</p>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+    <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+  </div>
+
+          </div>
+
+        </div>
+      
+      </div>
+      
+    
+    </div>
+
+  </div>
+
+  
+
+
+
+    <!--  SCRIPTS  -->
+  <script type="text/javascript" src="codigo.js"></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <script>
+      // Material Select Initialization
+$(document).ready(function() {
+  $('.mdb-select').materialSelect();
+});
+
+      $(document).ready(() => {
+        new WOW().init();
+      });
+    </script>
+</body>
+
+</html>

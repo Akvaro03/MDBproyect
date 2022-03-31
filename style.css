@@ -12,3 +12,77 @@
 .boton-nav:hover{
     transform: scale(1.1);
 }
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+body{
+    background: #d0d0d013;
+}
+
+.nombreMarca{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-control{
+    color: rgb(181, 181, 181) !important;
+}
+
+.botonProducto{
+    outline-color: #FFD365 !important;
+}
+
+.masck{
+    background-color: rgba(0, 0, 0, 0.063);
+    webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); border-radius:15px
+}
+
+hr{
+    border: 5px solid grey;
+}
+
+#productos{
+    background-image:
+    url('./fotos/fondo3.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+}
+
+#productos2{
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.productosDiv{
+    height: 100%;
+}
+
+.producto{
+    transition: all 0.5s ease-out;
+    transform: scale(1.1);
+}
+
+.producto:hover{
+    transition: all 0.5s ease-out;
+    transform: scale(1.4);
+}
+.producto2{
+    transition: all 0.6s ease-out;
+    transform: scale(1.2);
+}
+
+.producto2:hover{
+    transition: all 0.5s ease-out;
+    transform: scale(1.5);
+}

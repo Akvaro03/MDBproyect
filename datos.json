@@ -4,7 +4,7 @@
     "secretIdentity": "Dan Jukes",
     "powers": "volar",
     "category": "cpu_amd",
-    "precio": 1
+    "precio": 111
 },
 {
     "name": "Procesador AMD",
@@ -12,7 +12,7 @@
     "secretIdentity": "Dan Jukes",
     "powers": "volar",
     "category": "cpu_amd",
-    "precio": 1
+    "precio": 112
 },
 {
     "name": "Procesador AMD",
@@ -20,7 +20,7 @@
     "secretIdentity": "Dan Jukes",
     "powers": "volar",
     "category": "cpu_amd",
-    "precio": 1
+    "precio": 113
 },
 {
     "name": "Procesador Intel",
@@ -55,29 +55,12 @@
     "precio": 5
 },
 {
-    "name": "Memoria Adata DDR4 4GB 2666MHz Value M",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "memoria_ram",
-    "precio": 6
-},
-{
     "name": "Mouse Logitech",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
     "category": "mouse",
     "precio": 7
-},
-
-{
-    "name": "Monitor LG",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "monitor",
-    "precio": 8
 },
 {
     "name": "Monitor LG",
@@ -88,32 +71,6 @@
     "precio": 9
 },
 
-{
-    "name": "Auricular Sony",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "auricular",
-    "precio": 10
-},
-
-{
-    "name": "Auricular Sony",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "auricular",
-    "precio": 10
-},
-
-{
-    "name": "Auricular Sony",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "auricular",
-    "precio": 10
-},
 {
     "name": "Auricular Sony",
     "age": 89,

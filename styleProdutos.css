@@ -378,19 +378,28 @@ a .uil {
     -ms-flex-pack: distribute;
  */
 }
+.card{
+  transition: all 200ms ease-in-out;
+}
+.card:hover{
+  z-index: 7;
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+}
 
 @media (min-width: 700px){
   .cuadrilla{
     display: grid;
-    grid-template-columns: 3fr 9fr;
-    /* grid-gap: 10px; */
-    /* grid-auto-rows: minmax(100px, auto); */
-  
+    grid-template-columns: 3fr 9fr;  
   }    
+  #botonProducto{
+    display: none
+  }
 }
 @media (max-width: 700px){
   .opciones{
     display: none
   }
+
 }
 

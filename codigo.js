@@ -1,19 +1,21 @@
 //url del json
 const requestURL = 'datos.json';
 //buscar productos
+var categoriaBuscador = "";
+var numeroBuscador = 1;
 async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
     async function toJSon(data){
-        console.log(filtroPrecio)
-        if(filtroPrecio === 1){
+        // Menor precio
+        if(filtroPrecio == 1){
             async function porMenor() {
                 let base = [];
             
     
                 //buscar todos los precios de los productos
                 await data.forEach(element => {
-                    if(element.category === category){
-                        // console.log(Object.keys(data).length)
-        
+                    if(element.category == category){
+                        base.push(element.precio)            
+                    } else if(category == ""){
                         base.push(element.precio)            
                     }
                 })
@@ -38,8 +40,12 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 //buscar los objetos y guardarlos por menor
                 let guardarDatosMenor = async (numero) => {
                     await data.forEach(element => {
-                        if(element.category === category){
+                        if(element.category == category){
                             // console.log(element.precio)
+                            if(element.precio == numero){
+                                objetosPorMenor.push(element)
+                            }
+                        } else if(category == ""){
                             if(element.precio == numero){
                                 objetosPorMenor.push(element)
                             }
@@ -54,12 +60,72 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 for (let i = 0; i < numeroDeProduto; i++) {
                     guardarDatosMenor(IntentoPorMenor(base)[i])
                 }
+
+                var div = document.getElementById("productos33")
                 function escribir() {
+                    div.innerHTML="";
                     objetosPorMenor.forEach(element => {
-                        const div = document.createElement("div");
-                        div.innerHTML = element.precio                        
-                        document.body.appendChild(div);                        
-                        // document.getElementById("productos33").innerHTML=element.precio
+                        let nombre = element.category;
+                        let precio = element.precio;
+                        let categoria = element.category;
+
+
+
+                        let divCard = document.createElement("div");
+                        divCard.classList.add("card");
+
+                        // INICIO FOTO PRODUCTO
+                        let divOverlay = document.createElement("div");
+                        divOverlay.classList.add("view");
+                        divOverlay.classList.add("Overlay");
+
+                        const imgOverlay = document.createElement("img");
+                        imgOverlay.classList.add("card-img-top");
+                        imgOverlay.src = "https://mdbootstrap.com/img/Photos/Others/images/16.webp";
+                        imgOverlay.alt = "Logo Javascript";
+                        divOverlay.appendChild(imgOverlay);
+
+                        const aOverlay = document.createElement("a");
+                        aOverlay.href = "#!";
+
+                        let divA = document.createElement("div");
+                        divA.classList.add("mask");
+                        divA.classList.add("rgba-white-slight");
+                        aOverlay.appendChild(divA);
+
+                        divOverlay.appendChild(aOverlay);
+                        divCard.appendChild(divOverlay);
+                        // FIN FOTO PRODUCTO
+
+                        // INICIO CUERPO DEL PRODUCTO
+                        let cardBody = document.createElement("div");
+                        cardBody.classList.add("card-body");
+
+                        let h4CardBody = document.createElement("h4");
+                        h4CardBody.classList.add("card-title");
+                        h4CardBody.textContent = nombre
+
+                        let pCardBody = document.createElement("p");
+                        pCardBody.classList.add("card-text");
+                        pCardBody.textContent = precio
+
+                        let buttomCardBody = document.createElement("button");
+                        buttomCardBody.classList.add("btn");
+                        buttomCardBody.classList.add("btn-light-blue");
+                        buttomCardBody.classList.add("btn-md");
+                        buttomCardBody.textContent = "Read more"
+
+                        cardBody.appendChild(h4CardBody);
+                        cardBody.appendChild(pCardBody);
+                        cardBody.appendChild(buttomCardBody);
+
+
+                        divCard.appendChild(cardBody);
+
+                        div.appendChild(divCard);
+                        // const div = document.createElement("div").className("card");
+                        // div.innerHTML = element.precio                        
+                        // document.body.appendChild(div);                        
                     })  
                 }
                 escribir()
@@ -70,7 +136,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
             }    
             porMenor()
         }
-
+        // mayor precio
         if(filtroPrecio == 2) {
             async function  porMayor(){
                 let base = [];
@@ -78,9 +144,11 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
     
                 //buscar todos los precios de los productos
                 await data.forEach(element => {
-                    if(element.category === category){
+                    if(element.category == category){
                         // console.log(Object.keys(data).length)
         
+                        base.push(element.precio)            
+                    } else if(category == ""){
                         base.push(element.precio)            
                     }
                 })
@@ -105,8 +173,12 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 //buscar los objetos y guardarlos por mayor
                 let guardarDatosMayor = async (numero) => {
                     await data.forEach(element => {
-                        if(element.category === category){
+                        if(element.category == category){
                             // console.log(element.precio)
+                            if(element.precio == numero){
+                                objetosPorMayor.push(element)
+                            }
+                        } else if(category == ""){
                             if(element.precio == numero){
                                 objetosPorMayor.push(element)
                             }
@@ -122,7 +194,75 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                     guardarDatosMayor(IntentoPorMayor(base)[i])
                 }
         
-        
+                var div = document.getElementById("productos33")
+                function escribir() {
+                    div.innerHTML="";
+                    objetosPorMayor.forEach(element => {
+                        let nombre = element.category;
+                        let precio = element.precio;
+                        let categoria = element.category;
+
+
+
+                        let divCard = document.createElement("div");
+                        divCard.classList.add("card");
+
+                        // INICIO FOTO PRODUCTO
+                        let divOverlay = document.createElement("div");
+                        divOverlay.classList.add("view");
+                        divOverlay.classList.add("Overlay");
+
+                        const imgOverlay = document.createElement("img");
+                        imgOverlay.classList.add("card-img-top");
+                        imgOverlay.src = "https://mdbootstrap.com/img/Photos/Others/images/16.webp";
+                        imgOverlay.alt = "Logo Javascript";
+                        divOverlay.appendChild(imgOverlay);
+
+                        const aOverlay = document.createElement("a");
+                        aOverlay.href = "#!";
+
+                        let divA = document.createElement("div");
+                        divA.classList.add("mask");
+                        divA.classList.add("rgba-white-slight");
+                        aOverlay.appendChild(divA);
+
+                        divOverlay.appendChild(aOverlay);
+                        divCard.appendChild(divOverlay);
+                        // FIN FOTO PRODUCTO
+
+                        // INICIO CUERPO DEL PRODUCTO
+                        let cardBody = document.createElement("div");
+                        cardBody.classList.add("card-body");
+
+                        let h4CardBody = document.createElement("h4");
+                        h4CardBody.classList.add("card-title");
+                        h4CardBody.textContent = nombre
+
+                        let pCardBody = document.createElement("p");
+                        pCardBody.classList.add("card-text");
+                        pCardBody.textContent = precio
+
+                        let buttomCardBody = document.createElement("button");
+                        buttomCardBody.classList.add("btn");
+                        buttomCardBody.classList.add("btn-light-blue");
+                        buttomCardBody.classList.add("btn-md");
+                        buttomCardBody.textContent = "Read more"
+
+                        cardBody.appendChild(h4CardBody);
+                        cardBody.appendChild(pCardBody);
+                        cardBody.appendChild(buttomCardBody);
+
+
+                        divCard.appendChild(cardBody);
+
+                        div.appendChild(divCard);
+                        // const div = document.createElement("div").className("card");
+                        // div.innerHTML = element.precio                        
+                        // document.body.appendChild(div);                        
+                    })  
+                }
+                escribir()
+
         
                 console.log(objetosPorMayor)
         
@@ -142,5 +282,26 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
 
 }
-buscar('cpu_amd', 1);
+console.log(categoriaBuscador)
+buscar(categoriaBuscador, numeroBuscador);
 
+function preBuscar (opcion) {
+    let numero = opcion.value;
+    console.log(categoriaBuscador);
+    numeroBuscador = opcion.value;
+    console.log(numeroBuscador)
+    buscar(categoriaBuscador, numero);
+}
+
+function cambiarVariable (opcion) {
+    categoriaBuscador = opcion
+    console.log(categoriaBuscador);
+    buscar(categoriaBuscador, numeroBuscador);
+}
+
+document.getElementById('menorPrecio').onclick = () =>{
+    saludar()
+};
+document.getElementById('mayorPrecio').onclick = function (){
+    saludar()
+};

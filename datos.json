@@ -1,65 +1,125 @@
 [{
-      "name": "Molecule Man",
-      "age": 29,
-      "secretIdentity": "Dan Jukes",
-      "powers": "volar",
-      "category": "cpu_amd",
-      "precio": 600
-},
-{
-    "name": "Proton Man",
-    "age": 89,
+    "name": "Procesador AMD",
+    "age": 29,
     "secretIdentity": "Dan Jukes",
-    "powers": "violar",
+    "powers": "volar",
     "category": "cpu_amd",
-    "precio": 1200
+    "precio": 1
 },
 {
-    "name": "Proton Man",
-    "age": 89,
+    "name": "Procesador AMD",
+    "age": 29,
     "secretIdentity": "Dan Jukes",
-    "powers": "violar",
+    "powers": "volar",
     "category": "cpu_amd",
-    "precio": 600
+    "precio": 1
 },
 {
-    "name": "Proton Man",
-    "age": 89,
+    "name": "Procesador AMD",
+    "age": 29,
     "secretIdentity": "Dan Jukes",
-    "powers": "violar",
+    "powers": "volar",
     "category": "cpu_amd",
-    "precio": 400
+    "precio": 1
 },
 {
-    "name": "Proton Man",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "cpu_amd",
-    "precio": 700
-},
-{
-    "name": "Proton Man",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "cpu_amd",
-    "precio": 800
-},
-{
-    "name": "Proton Man",
-    "age": 89,
-    "secretIdentity": "Dan Jukes",
-    "powers": "violar",
-    "category": "cpu_amd",
-    "precio": 900
-},
-
-{
-    "name": "Electro Man",
+    "name": "Procesador Intel",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
     "category": "cpu_intel",
-    "precio": 300
-}]
+    "precio": 2
+},
+{
+    "name": "Mother ASUS PRIME A320M-K",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mother_amd",
+    "precio": 3
+},
+{
+    "name": "Mother MSI H310M PRO-VDH M",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mother_intel",
+    "precio": 4
+},
+{
+    "name": "Memoria Adata DDR4 4GB 2666MHz Value M",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "memoria_ram",
+    "precio": 5
+},
+{
+    "name": "Memoria Adata DDR4 4GB 2666MHz Value M",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "memoria_ram",
+    "precio": 6
+},
+{
+    "name": "Mouse Logitech",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mouse",
+    "precio": 7
+},
+
+{
+    "name": "Monitor LG",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "monitor",
+    "precio": 8
+},
+{
+    "name": "Monitor LG",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "monitor",
+    "precio": 9
+},
+
+{
+    "name": "Auricular Sony",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "auricular",
+    "precio": 10
+},
+
+{
+    "name": "Auricular Sony",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "auricular",
+    "precio": 10
+},
+
+{
+    "name": "Auricular Sony",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "auricular",
+    "precio": 10
+},
+{
+    "name": "Auricular Sony",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "auricular",
+    "precio": 10
+}
+]

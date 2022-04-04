@@ -21,29 +21,27 @@
 </head>
 
 <body>
-  <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
-    <a href="#top-section" class="btn-floating btn-large red">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-  </div>
+  <div class="circulos" id="circulo1"></div>
+  <!-- <div class="circulos" id="circulo2"></div> -->
+
   <!--Main Navigation-->
 
   <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container smooth-scroll">
-          <a class="navbar-brand nombreMarca" href="#"><strong>Tienda generica</strong></a>
+          <a class="navbar-brand nombreMarca text-dark" href="#" style="font-family: 'Segoe UI',Roboto,'Helvetica'"><span style="color: #5e9693;">Tienda</span> <span style="color: rgb(69, 69, 69);">generica</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                      <p class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></p>
+                      <p class="nav-link" href="#home" style="color: rgb(69, 69, 69);">Inicio <span class="sr-only">(current)</span></p>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#team" data-offset="60">Productos</a>
+                      <a class="nav-link" href="#team" style="color: rgb(69, 69, 69);" data-offset="60">Productos</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#products" data-offset="60">Nosotros</a>
+                      <a class="nav-link" href="#products" style="color: rgb(69, 69, 69);" data-offset="60">Nosotros</a>
                   </li>
               </ul>
               <div class="md-form my-0">
@@ -54,7 +52,7 @@
                     <path d="M0 0h24v24H0z" fill="none" />
                   </svg>
                 </button>
-                <label for="form-autocomplete" class="text-white">Buscador</label>
+                <label for="form-autocomplete">Buscador</label>
               </div>
               </div>
       </div>
@@ -87,8 +85,8 @@
 
                 <!--Menu-->
                 <div class="dropdown-menu dropdown-primary w-100">
-                  <a class="dropdown-item" href="#">Mothers AMD</a>
-                  <a class="dropdown-item" href="#">Mothers Intel</a>
+                  <a class="dropdown-item" href="#" onclick="cambiarVariable('mother_amd')">Mothers AMD</a>
+                  <a class="dropdown-item" href="#" onclick="cambiarVariable('mother_intel')">Mothers Intel</a>
                 </div>
               </div>
               <!--/Dropdown primary-->
@@ -101,62 +99,15 @@
 
   <!--Menu-->
   <div class="dropdown-menu dropdown-primary w-100">
-    <a class="dropdown-item" href="#">Memorias</a>
-    <a class="dropdown-item" href="#">Memorias Sodimm</a>
+    <a class="dropdown-item" href="#" onclick="cambiarVariable('memoria_ram')">Memorias</a>
+    <a class="dropdown-item" href="#" onclick="cambiarVariable('memoria_ram')">Memorias Sodimm</a>
   </div>
               </div>
-              <!--/Dropdown primary-->
-              <!--Dropdown primary-->
-              <div class="dropdown w-30">
-
-  <!--Trigger-->
-  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
-    aria-haspopup="true" aria-expanded="false" style="">Almacenamiento</button>
-
-  <!--Menu-->
-  <div class="dropdown-menu dropdown-primary w-100">
-    <a class="dropdown-item" href="#">Discos rigidos externos</a>
-    <a class="dropdown-item" href="#">Pendrives</a>
-    <a class="dropdown-item" href="#">Discos rigidos internos</a>
-    <a class="dropdown-item" href="#">Discos solidos SSD</a>
-  </div>
-              </div>
-              <!--/Dropdown primary-->
-              <!--Dropdown primary-->
-              <div class="dropdown w-30">
-
-  <!--Trigger-->
-  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
-    aria-haspopup="true" aria-expanded="false" style="">Material dropdown</button>
-
-  <!--Menu-->
-  <div class="dropdown-menu dropdown-primary w-100">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-              </div>
-              <!--/Dropdown primary-->
-              <!--Dropdown primary-->
-              <div class="dropdown w-30">
-
-  <!--Trigger-->
-  <button class="btn  btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownMenu1" data-toggle="dropdown"
-    aria-haspopup="true" aria-expanded="false" style="">Placas de videos</button>
-
-  <!--Menu-->
-  <div class="dropdown-menu dropdown-primary w-100">
-    <a class="dropdown-item" href="#">Placas de video GeForce</a>
-    <a class="dropdown-item" href="#">Placas de video Radeon AMD</a>
-  </div>
-              </div>
-              <!--/Dropdown primary-->
-      
+              <!--/Dropdown primary-->      
       </div>
       <div class="col-8 col-xs-12" >
         <div class="row">
-          <select class="mdb-select md-form mt-0 col-7" style="background: black;" onchange="preBuscar(this)">
+          <select class="mdb-select md-form mt-0 col-7 mb-0" style="background: black;" onchange="preBuscar(this)">
             <option value="" disabled selected>Ordenar por</option>
             <option value="2" id="mayorPrecio">Mayor precio</option>
             <option value="1" id="menorPrecio">Menor precio</option>
@@ -173,7 +124,6 @@
 
   </div>
 
-  
 
 
     <!--  SCRIPTS  -->

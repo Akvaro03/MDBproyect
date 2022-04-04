@@ -1,82 +1,169 @@
 [{
-    "name": "Procesador AMD",
+    "name": "Procesador AMD RYZEN 5 3600 4.2GHz",
     "age": 29,
     "secretIdentity": "Dan Jukes",
     "powers": "volar",
     "category": "cpu_amd",
-    "precio": 111
+    "precio": 32150,
+    "foto": "./fotosProductos/procesadorAmd1.jpg"
 },
 {
-    "name": "Procesador AMD",
+    "name": "Procesador AMD Ryzen 5 1600 AF",
     "age": 29,
     "secretIdentity": "Dan Jukes",
     "powers": "volar",
     "category": "cpu_amd",
-    "precio": 112
+    "precio": 32330,
+    "foto": "./fotosProductos/procesadorAmd2.jpg"
+
 },
 {
-    "name": "Procesador AMD",
+    "name": "Procesador AMD RYZEN 7 3800XT",
     "age": 29,
     "secretIdentity": "Dan Jukes",
     "powers": "volar",
     "category": "cpu_amd",
-    "precio": 113
+    "precio": 56380,
+    "foto": "./fotosProductos/procesadorAmd3.jpg"
 },
 {
-    "name": "Procesador Intel",
+    "name": "Procesador Intel Core i3 10100 4.3GHz",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
     "category": "cpu_intel",
-    "precio": 2
+    "precio": 19430,
+    "foto": "./fotosProductos/procesadorIntel1.jpg"
 },
 {
-    "name": "Mother ASUS PRIME A320M-K",
+    "name": "Procesador Intel Core i7 9700F 4.7GHz",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "cpu_intel",
+    "precio": 31950,
+    "foto": "./fotosProductos/procesadorIntel2.jpg"
+},
+
+{
+    "name": "Procesador Intel Core i5 10400F 4.3GHz",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "cpu_intel",
+    "precio": 20760,
+    "foto": "./fotosProductos/procesadorIntel3.jpg"
+},
+
+{
+    "name": "Mother Asrock X370M-HDV AM4",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
     "category": "mother_amd",
-    "precio": 3
+    "precio": 6450,
+    "foto": "./fotosProductos/motherAmd1.jpg"
 },
 {
-    "name": "Mother MSI H310M PRO-VDH M",
+    "name": "Mother Gigabyte GA-A320M-S2H",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mother_amd",
+    "precio": 7870,
+    "foto": "./fotosProductos/motherAmd2.jpg"
+},
+
+{
+    "name": "Mother ASUS ROG STRIX X570-E",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mother_amd",
+    "precio": 58490,
+    "foto": "./fotosProductos/motherAmd3.jpg"
+},
+{
+    "name": "Mother ASUS ROG MAXIMUS Z690",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
     "category": "mother_intel",
-    "precio": 4
+    "precio": 295040,
+    "foto": "./fotosProductos/motherIntel1.jpg"
 },
 {
-    "name": "Memoria Adata DDR4 4GB 2666MHz Value M",
+    "name": "Mother Gigabyte H410M H V3 S1200",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mother_intel",
+    "precio": 11890,
+    "foto": "./fotosProductos/motherIntel2.jpg"
+},
+
+{
+    "name": "Mother MSI H310M PRO-VDH",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "mother_intel",
+    "precio": 8796,
+    "foto": "./fotosProductos/motherIntel3.jpg"
+},
+{
+    "name": "Memoria GeiL DDR4 16GB 3000MHz",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
     "category": "memoria_ram",
-    "precio": 5
+    "precio": 9999,
+    "foto": "./fotosProductos/memoriaRam1.jpg"
 },
 {
-    "name": "Mouse Logitech",
+    "name": "Memoria Adata DDR4 4GB 2666MHz",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
-    "category": "mouse",
-    "precio": 7
+    "category": "memoria_ram",
+    "precio": 3488,
+    "foto": "./fotosProductos/memoriaRam2.jpg"
 },
 {
-    "name": "Monitor LG",
+    "name": "Memoria Adata DDR4 8GB 2666MHz",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
-    "category": "monitor",
-    "precio": 9
+    "category": "memoria_ram",
+    "precio": 6080,
+    "foto": "./fotosProductos/memoriaRam3.jpg"
 },
-
 {
-    "name": "Auricular Sony",
+    "name": "Memoria Adata DDR4 16GB 2666Mhz",
     "age": 89,
     "secretIdentity": "Dan Jukes",
     "powers": "violar",
-    "category": "auricular",
-    "precio": 10
+    "category": "memoria_soddimm",
+    "precio": 8990,
+    "foto": "./fotosProductos/memoriaSodimm1.jpg"
+},
+{
+    "name": "Memoria Team DDR4 16GB (2x8GB) 3200MHz",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "memoria_soddimm",
+    "precio": 11360,
+    "foto": "./fotosProductos/memoriaSodimm2.jpg"
+},
+{
+    "name": "Memoria Team DDR4 32GB (2x16GB) 3200MHz",
+    "age": 89,
+    "secretIdentity": "Dan Jukes",
+    "powers": "violar",
+    "category": "memoria_soddimm",
+    "precio": 20420,
+    "foto": "./fotosProductos/memoriaSodimm3.jpg"
 }
+
 ]

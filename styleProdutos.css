@@ -429,19 +429,19 @@ body{
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #00C897;
+  background: #019267;
   position: absolute;
   right: -55px;
   bottom:  -55px;
 }
-.card:hover .circulos2{
+/* .card:hover .circulos2{
   transition: all 0.5s ease-in-out;
   right: -75px;
   bottom:  -95px;
   width: 400px;
   height: 400px;
   z-index: -10;
-}
+} */
 
 #circulo1{
   position: absolute;
@@ -465,4 +465,13 @@ body{
 
 .card-body{
   overflow: hidden;
+}
+
+.card{
+  border: 1px solid rgb(114, 114, 114)
+}
+
+.btn-outline-default{
+  border: 2px solid #019267 !important;
+  color: #019267 !important;
 }

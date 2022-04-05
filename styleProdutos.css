@@ -420,16 +420,16 @@ body{
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #ffae00;
+  background: #ffcd4d;
 }
 .circulos2 {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100px;
   height: 100px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #ffae00;
+  background: #00C897;
   position: absolute;
   right: -55px;
   bottom:  -55px;
@@ -460,5 +460,9 @@ body{
 }
 
 .cosaRara{
+  overflow: hidden;
+}
+
+.card-body{
   overflow: hidden;
 }

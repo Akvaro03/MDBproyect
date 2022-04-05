@@ -498,3 +498,8 @@ position: fixed;
   font-size:2vw;
   font: 400 24px/30px "Montserrat",sans-serif!important;
 }
+
+.estiloNose{
+  transition:all 0.3s ease-in-out;
+  transform: scale(0.1);
+}

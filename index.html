@@ -100,7 +100,6 @@
 <body>
 
   <!--Main Navigation-->
-
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar intentoNavbar" style="background-color: rgba(0, 0, 0, 0.11) !important;  ">
       <div class="container smooth-scroll">
           <a class="navbar-brand nombreMarca" href="#"><strong>Tienda generica</strong></a>
@@ -108,15 +107,16 @@
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                       <p class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></p>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./productos.html" data-offset="60">Productos</a>
+                  <li class="nav-item uwu" id="productos22">
+                    <a class="nav-link" href="productos.html" target="_blank" data-offset="60">Productos</a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#products" data-offset="60">Nosotros</a>
+                  <li class="nav-item">  
+                    <a class="nav-link" href="productos.html" target="_blank" data-offset="60">Productos</a>
                   </li>
               </ul>
               <div class="md-form my-0">
@@ -132,7 +132,7 @@
               </div>
       </div>
   </nav>          
-  
+
 
 
   <!-- Intro Section -->
@@ -159,6 +159,7 @@
         </div>
       </div>
   </div>
+  <a class="nav-link" href="productos.html" target="_blank" data-offset="60">Productos</a>
 
   <hr class="my-0 py-0">
 
@@ -192,7 +193,7 @@
 
     <!--  SCRIPTS  -->
     <!-- mi JavaScript -->
-    <script type="text/javascript" src="codigo.js"></script>
+    <!-- <script type="text/javascript" src="codigo.js"></script> -->
     <!-- JQuery -->
     <script type="text/javascript" src="./js/jquery.min.js"></script>
 
@@ -202,7 +203,13 @@
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="./js/mdb.min.js"></script>
-    <script>
+    <script> 
+      var holaaaa = document.getElementById("productos22");
+      console.log(holaaaa);
+      holaaaa.addEventListener('click', function() {
+        window.location.href = "productos.html";
+      })
+
       $(document).ready(() => {
         new WOW().init();
       });

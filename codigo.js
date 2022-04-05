@@ -72,8 +72,6 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         precio = nf.format(precio)
                         let categoria = element.category;
                         let foto = element.foto;
-                        console.log(precio)
-
 
 
                         let divCard = document.createElement("div");
@@ -133,6 +131,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
 
                         divCard.appendChild(cardBody);
+                        divCard.classList.add("intento");
 
                         div.appendChild(divCard);
                         divCard.id = "elemento"
@@ -211,7 +210,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 function escribir() {
                     div.innerHTML="";
                     objetosPorMayor.forEach(element => {
-                        const nf = new Intl.NumberFormat("es-MX");
+                        const nf = new Intl.NumberFormat("es-AR");
 
                         let nombre = element.name;
                         let precio = element.precio;
@@ -224,6 +223,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         let divCard = document.createElement("div");
                         divCard.classList.add("card");
+                        divCard.classList.add("cosaRara");
 
                         // INICIO FOTO PRODUCTO
                         let divOverlay = document.createElement("div");
@@ -251,6 +251,10 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         // INICIO CUERPO DEL PRODUCTO
                         let cardBody = document.createElement("div");
                         cardBody.classList.add("card-body");
+                        cardBody.classList.add("cosaRara");
+
+                        let circulo = document.createElement("div");
+                        circulo.classList.add("circulos2");
 
                         let h4CardBody = document.createElement("h4");
                         h4CardBody.classList.add("card-title");
@@ -265,13 +269,16 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         buttomCardBody.classList.add("btn-light-blue");
                         buttomCardBody.classList.add("btn-md");
                         buttomCardBody.textContent = "Comprar"
+                        // FIN CUERPO DEL PRODUCTO
 
+                        cardBody.appendChild(circulo);
                         cardBody.appendChild(h4CardBody);
                         cardBody.appendChild(pCardBody);
                         cardBody.appendChild(buttomCardBody);
 
 
                         divCard.appendChild(cardBody);
+                        divCard.classList.add("intento");
 
                         div.appendChild(divCard);
                         // const div = document.createElement("div").className("card");
@@ -296,7 +303,6 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
 
 }
-console.log(categoriaBuscador)
 buscar(categoriaBuscador, numeroBuscador);
 
 function preBuscar (opcion) {
@@ -312,58 +318,3 @@ function cambiarVariable (opcion) {
     console.log(categoriaBuscador);
     buscar(categoriaBuscador, numeroBuscador);
 }
-
-// let card = document.getElementsByClassName("card")
-// card.addEventListener('mousemove', function() {
-//     console.log('El raton se esta moviendo');
-// })
-
-// window.onload=function(){
-//     var elemento=document.getElementById("elemento");
-//     elemento.onmouseover = function(e) {
-
-//         // El contenido de esta funcion se ejecutara cuanso el mouse
-//         // pase por encima del elemento
-
-//         console.log("adentro")
-//     };
-//     elemento.onmouseout = function(e) {
-
-//         // El contenido de esta funcion se ejecutara cuanso el mouse
-//         // salga del elemento
-
-//         console.log("afuera")
-//     };
-// }
-
-function appendText(str) {
-    document.body.innerHTML += str + "<br/>";
-}
-let card = document.getElementsByID("card");
-
-card.onmousedown = function() {
-    appendText("onmousedown");
-    appendText("button = " + event.button);
-    appendText("(x,y) = " + event.x + "," + event.y);
-  }
-  card.onmouseup = function() {
-    appendText("onmouseup");
-  }
-  card.onclick = function() {
-    appendText("onclick");
-  }
-  card.ondblclick = function() {
-    appendText("ondblclick");
-  }
-  card.oncontextmenu = function() {
-    appendText("oncontextmenu");
-  }
-  card.onmouseover = function() {
-    appendText("onmouseover");
-  }
-  card.onmouseout = function() {
-    appendText("onmouseout");
-  }
-  card.onmousemove = function() {
-    appendText("mousemove");
-  } 

@@ -423,6 +423,7 @@ body{
   background: #ffae00;
 }
 .circulos2 {
+  transition: all 0.3s ease-in-out;
   width: 100px;
   height: 100px;
   -moz-border-radius: 50%;
@@ -433,12 +434,12 @@ body{
   right: -55px;
   bottom:  -55px;
 }
-.circulos2:hover{
-  transition: all 0.5s ease-out;
+.card:hover .circulos2{
+  transition: all 0.5s ease-in-out;
   right: -75px;
   bottom:  -95px;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   z-index: -10;
 }
 

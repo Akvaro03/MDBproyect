@@ -61,7 +61,9 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                     guardarDatosMenor(IntentoPorMenor(base)[i])
                 }
 
-                var div = document.getElementById("productos33")
+                var div = document.getElementById("productos33") 
+                var divPrincipal = document.getElementById("noseeeee") 
+
                 function escribir() {
                     div.innerHTML="";
                     objetosPorMenor.forEach(element => {
@@ -119,6 +121,45 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         let buttomCardBody = document.createElement("button");
                         buttomCardBody.classList.add("btn");
+
+                        buttomCardBody.onclick = () =>{
+                            // creacion del div principal
+                            let divProducto = document.createElement("div");
+                            divProducto.classList.add("divProducto");
+
+                            // creacion del div responsive
+                            let divProductoContenido = document.createElement("div");
+                            divProductoContenido.classList.add("row");
+                            divProductoContenido.classList.add("container-fluid");
+
+                            let imgProducto = document.createElement("img");
+                            imgProducto.classList.add("col-md-6");
+                            imgProducto.classList.add("col-12");
+
+                            imgProducto.classList.add("fotoProducto");
+                            imgProducto.src = foto;
+
+                            let divProductoContenidoLetra = document.createElement("div");
+                            divProductoContenidoLetra.classList.add("col-md-6");
+                            divProductoContenidoLetra.classList.add("col-12");
+
+                            let divProductoTitulo = document.createElement("h1");
+                            divProductoTitulo.classList.add("responsive-font-example");
+                            divProductoTitulo.classList.add("mt-5");
+                            divProductoTitulo.textContent = nombre;
+
+                            divProductoContenido.appendChild(imgProducto);
+                            divProductoContenido.appendChild(divProductoContenidoLetra);
+                            divProductoContenidoLetra.appendChild(divProductoTitulo);
+
+                            divProducto.appendChild(divProductoContenido)
+                            divPrincipal.appendChild(divProducto)
+                        }
+
+                        // document.getElementById('elemento').onclick = (parametro) =>{
+                        //     // contenido de la funcoion
+                        //     }
+                            
                         buttomCardBody.classList.add("btn-light-blue");
                         buttomCardBody.classList.add("btn-md");
                         buttomCardBody.textContent = "Comprar"
@@ -317,4 +358,13 @@ function cambiarVariable (opcion) {
     categoriaBuscador = opcion
     console.log(categoriaBuscador);
     buscar(categoriaBuscador, numeroBuscador);
+}
+
+var holaaaa = document.getElementById("productos22");
+holaaaa.addEventListener('click', function() {
+  window.location.href = "index.html";
+})
+
+let mostrarObjeto = () => {
+    console.log("Mostrar")
 }

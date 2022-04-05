@@ -475,3 +475,26 @@ body{
   border: 2px solid #019267 !important;
   color: #019267 !important;
 }
+
+.divProducto{
+  /* margin-left: auto; */
+/* margin-right: auto; */
+position: fixed;
+  height: 90%;
+  width: 85%;
+  top: 5%;
+  left: 8%; /* position the left edge of the element at the middle of the parent */
+  background-color: rgb(255, 255, 255);
+  z-index: 60;
+  border-radius:15px;
+}
+
+.fotoProducto{
+  display: flex;
+  align-items: center;
+}
+
+.responsive-font-example{
+  font-size:2vw;
+  font: 400 24px/30px "Montserrat",sans-serif!important;
+}

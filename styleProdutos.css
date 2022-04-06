@@ -385,6 +385,9 @@ a .uil {
   transform: scale(1.1);
   transition: all 200ms ease-in-out;
 }
+#botonProducto{
+  display: none
+}
 
 @media (min-width: 700px){
   .cuadrilla{
@@ -422,13 +425,14 @@ body{
   border-radius: 50%;
   background: #ffcd4d;
 }
-@media (min-width: 700px){
-  .circulos{
-    width: 500px;
-    height: 500px;
-    }
 
+@media (max-width: 700px){
+  .circulos{
+    width: 900px;
+    height: 900px;
+      }    
 }
+
 
 .circulos2 {
   transition: all 0.2s ease-in-out;

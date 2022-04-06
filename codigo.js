@@ -265,7 +265,9 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 for (let i = 0; i < numeroDeProduto; i++) {
                     guardarDatosMayor(IntentoPorMayor(base)[i])
                 }
-        
+                var div = document.getElementById("productos33") 
+                var divPrincipal = document.getElementById("noseeeee") 
+
                 var div = document.getElementById("productos33")
                 function escribir() {
                     div.innerHTML="";
@@ -320,7 +322,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         let pCardBody = document.createElement("p");
                         pCardBody.classList.add("card-text");
-                        pCardBody.textContent = precio
+                        pCardBody.textContent = "$" + precio
 
                         let buttomCardBody = document.createElement("button");
                         buttomCardBody.classList.add("botonCard");
@@ -345,6 +347,16 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoTitulo.classList.add("col-md-12");
                             divProductoTitulo.classList.add("col-12");
 
+                            let divProductoTitulo2 = document.createElement("p");
+                            divProductoTitulo2.classList.add("responsive-font-example2");
+                            divProductoTitulo2.classList.add("text-center");
+                            divProductoTitulo2.classList.add("mt-5");
+                            divProductoTitulo2.classList.add("pt-5");
+                            divProductoTitulo2.textContent = "Clickear afuera para salir";
+                            divProductoTitulo2.classList.add("col-md-12");
+                            divProductoTitulo2.classList.add("col-12");
+
+
                             // imgProducto.classList.add("fotoProducto");
                             // imgProducto.src = foto;
 
@@ -355,6 +367,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             // divProductoTitulo.textContent = nombre;
 
                             divProductoContenido.appendChild(divProductoTitulo);
+                            divProductoContenido.appendChild(divProductoTitulo2);
 
                             divProducto.appendChild(divProductoContenido)
                             divPrincipal.appendChild(divProducto)

@@ -137,12 +137,12 @@
                 ">
                         <h1 class="display-3 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">Nuevos <a class="text-warning font-weight-bold">Productos</a></h1>
                         <h5 class="text-uppercase white-text mb-5 mt-1 font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Nuevas introducciones de Razor. </h5>
-                        <a id="shop-button" data-mdb-toggle="animation" data-mdb-animation-reset="true"
+                        <a id="shop-button1" data-mdb-toggle="animation" data-mdb-animation-reset="true"
                         data-mdb-animation="slide-right" data-wow-delay="1s"
-                        class="btn btn-outline-warning btn-lg wow fadeInDown" data-wow-delay="0.3s">Productos</a>
-                        <a id="shop-button" data-mdb-toggle="animation" data-mdb-animation-reset="true"
+                        class="btn botonProductos1 btn-outline-warning btn-lg wow fadeInDown" data-wow-delay="0.3s">Productos</a>
+                        <a id="shop-button2" data-mdb-toggle="animation" data-mdb-animation-reset="true"
                         data-mdb-animation="slide-right" data-wow-delay="1s"
-                        class="btn btn-outline-warning btn-lg wow fadeInDown" data-wow-delay="0.3s">Pagina Razer</a>
+                        class="btn botonProductos2 btn-outline-warning btn-lg wow fadeInDown" data-wow-delay="0.3s">Pagina Razer</a>
                         </div>
                 </div>
             </div>
@@ -193,10 +193,24 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="./js/mdb.min.js"></script>
     <script> 
-      var holaaaa = document.getElementById("productos22");
-      holaaaa.addEventListener('click', function() {
+      let bottonNav1 = document.getElementById("productos22");
+      let bottonInicio = document.querySelector(".botonProductos1");
+      let bottonInicio2 = document.querySelector(".botonProductos2");
+
+      
+
+      bottonNav1.addEventListener('click', function() {
         window.location.href = "productos.html";
       })
+
+      bottonInicio.addEventListener('click', function() {
+        window.location.href = "productos.html";
+      })
+
+      bottonInicio2.addEventListener('click', function() {
+        window.location.href = "https://www.razer.com/";
+      })
+
 
       $(document).ready(() => {
         new WOW().init();

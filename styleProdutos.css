@@ -422,6 +422,14 @@ body{
   border-radius: 50%;
   background: #ffcd4d;
 }
+@media (min-width: 700px){
+  .circulos{
+    width: 500px;
+    height: 500px;
+    }
+
+}
+
 .circulos2 {
   transition: all 0.2s ease-in-out;
   width: 100px;

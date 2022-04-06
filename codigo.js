@@ -149,7 +149,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoTitulo2.classList.add("text-center");
                             divProductoTitulo2.classList.add("mt-5");
                             divProductoTitulo2.classList.add("pt-5");
-                            divProductoTitulo2.textContent = "Clickear afuera para salir";
+                            divProductoTitulo2.textContent = "Tocar afuera para salir";
                             divProductoTitulo2.classList.add("col-md-12");
                             divProductoTitulo2.classList.add("col-12");
 
@@ -352,7 +352,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoTitulo2.classList.add("text-center");
                             divProductoTitulo2.classList.add("mt-5");
                             divProductoTitulo2.classList.add("pt-5");
-                            divProductoTitulo2.textContent = "Clickear afuera para salir";
+                            divProductoTitulo2.textContent = "Tocar afuera para salir";
                             divProductoTitulo2.classList.add("col-md-12");
                             divProductoTitulo2.classList.add("col-12");
 

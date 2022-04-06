@@ -501,7 +501,7 @@ position: fixed;
   width: 85%;
   top: 5%;
   left: 8%; /* position the left edge of the element at the middle of the parent */
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(209, 209, 209, 0.946);
   z-index: 60;
   border-radius:15px;
 }
@@ -512,9 +512,15 @@ position: fixed;
 }
 
 .responsive-font-example{
-  font-size:2vw;
-  font: 400 24px/30px "Montserrat",sans-serif!important;
+  font-size:4vw;
+  font: 400 64px/80px "Montserrat",sans-serif!important;
 }
+
+.responsive-font-example2{
+  font-size:4vw;
+  font: 300 24px/80px "Montserrat",sans-serif!important;
+}
+
 
 .estiloNose{
   transition:all 0.3s ease-in-out;

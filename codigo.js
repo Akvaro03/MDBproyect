@@ -119,7 +119,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         let pCardBody = document.createElement("p");
                         pCardBody.classList.add("card-text");
-                        pCardBody.textContent = precio
+                        pCardBody.textContent = "$" + precio
 
                         let buttomCardBody = document.createElement("button");
                         buttomCardBody.classList.add("botonCard");
@@ -135,25 +135,36 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoContenido.classList.add("row");
                             divProductoContenido.classList.add("container-fluid");
 
-                            let imgProducto = document.createElement("img");
-                            imgProducto.classList.add("col-md-6");
-                            imgProducto.classList.add("col-12");
-
-                            imgProducto.classList.add("fotoProducto");
-                            imgProducto.src = foto;
-
-                            let divProductoContenidoLetra = document.createElement("div");
-                            divProductoContenidoLetra.classList.add("col-md-6");
-                            divProductoContenidoLetra.classList.add("col-12");
-
                             let divProductoTitulo = document.createElement("h1");
                             divProductoTitulo.classList.add("responsive-font-example");
+                            divProductoTitulo.classList.add("text-center");
                             divProductoTitulo.classList.add("mt-5");
-                            divProductoTitulo.textContent = nombre;
+                            divProductoTitulo.classList.add("pt-5");
+                            divProductoTitulo.textContent = "Esta parte esta en proceso";
+                            divProductoTitulo.classList.add("col-md-12");
+                            divProductoTitulo.classList.add("col-12");
 
-                            divProductoContenido.appendChild(imgProducto);
-                            divProductoContenido.appendChild(divProductoContenidoLetra);
-                            divProductoContenidoLetra.appendChild(divProductoTitulo);
+                            let divProductoTitulo2 = document.createElement("p");
+                            divProductoTitulo2.classList.add("responsive-font-example2");
+                            divProductoTitulo2.classList.add("text-center");
+                            divProductoTitulo2.classList.add("mt-5");
+                            divProductoTitulo2.classList.add("pt-5");
+                            divProductoTitulo2.textContent = "Clickear afuera para salir";
+                            divProductoTitulo2.classList.add("col-md-12");
+                            divProductoTitulo2.classList.add("col-12");
+
+
+                            // imgProducto.classList.add("fotoProducto");
+                            // imgProducto.src = foto;
+
+
+                            // let divProductoTitulo = document.createElement("h1");
+                            // divProductoTitulo.classList.add("responsive-font-example");
+                            // divProductoTitulo.classList.add("mt-5");
+                            // divProductoTitulo.textContent = nombre;
+
+                            divProductoContenido.appendChild(divProductoTitulo);
+                            divProductoContenido.appendChild(divProductoTitulo2);
 
                             divProducto.appendChild(divProductoContenido)
                             divPrincipal.appendChild(divProducto)
@@ -180,7 +191,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         divCard.classList.add("intento");
 
                         div.appendChild(divCard);
-                        divCard.id = "elemento"
+                        // divCard.id = "elemento"
 
 
                         
@@ -325,25 +336,25 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoContenido.classList.add("row");
                             divProductoContenido.classList.add("container-fluid");
 
-                            let imgProducto = document.createElement("img");
-                            imgProducto.classList.add("col-md-6");
-                            imgProducto.classList.add("col-12");
-
-                            imgProducto.classList.add("fotoProducto");
-                            imgProducto.src = foto;
-
-                            let divProductoContenidoLetra = document.createElement("div");
-                            divProductoContenidoLetra.classList.add("col-md-6");
-                            divProductoContenidoLetra.classList.add("col-12");
-
                             let divProductoTitulo = document.createElement("h1");
                             divProductoTitulo.classList.add("responsive-font-example");
+                            divProductoTitulo.classList.add("text-center");
                             divProductoTitulo.classList.add("mt-5");
-                            divProductoTitulo.textContent = nombre;
+                            divProductoTitulo.classList.add("pt-5");
+                            divProductoTitulo.textContent = "Esta parte esta en proceso";
+                            divProductoTitulo.classList.add("col-md-12");
+                            divProductoTitulo.classList.add("col-12");
 
-                            divProductoContenido.appendChild(imgProducto);
-                            divProductoContenido.appendChild(divProductoContenidoLetra);
-                            divProductoContenidoLetra.appendChild(divProductoTitulo);
+                            // imgProducto.classList.add("fotoProducto");
+                            // imgProducto.src = foto;
+
+
+                            // let divProductoTitulo = document.createElement("h1");
+                            // divProductoTitulo.classList.add("responsive-font-example");
+                            // divProductoTitulo.classList.add("mt-5");
+                            // divProductoTitulo.textContent = nombre;
+
+                            divProductoContenido.appendChild(divProductoTitulo);
 
                             divProducto.appendChild(divProductoContenido)
                             divPrincipal.appendChild(divProducto)
@@ -370,7 +381,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         divCard.classList.add("intento");
 
                         div.appendChild(divCard);
-                        divCard.id = "elemento"
+                        // divCard.id = "elemento"
 
 
                         
@@ -434,8 +445,7 @@ document.addEventListener('click', e => {
             e.target != divImportante
             // Ni en uno de sus hijos
             && e.target !== botonDiv
-            && !divImportante.contains(e.target)
-            && !botonDiv.contains(e.target)) {
+            && !divImportante.contains(e.target)) {
             numero++ 
             residuo = numero % 2
             console.log(residuo)

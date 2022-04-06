@@ -268,7 +268,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         let foto = element.foto;
 
 
-                        let divCard = document.createElement("div");
+                        var divCard = document.createElement("div");
                         divCard.classList.add("card");
                         divCard.classList.add("cosaRara");
 
@@ -312,6 +312,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         pCardBody.textContent = precio
 
                         let buttomCardBody = document.createElement("button");
+                        buttomCardBody.classList.add("botonCard");
                         buttomCardBody.classList.add("btn");
 
                         buttomCardBody.onclick = () =>{
@@ -346,6 +347,8 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                             divProducto.appendChild(divProductoContenido)
                             divPrincipal.appendChild(divProducto)
+                            existencia = 2;
+                            console.log(existencia)    
                         }
 
                         // document.getElementById('elemento').onclick = (parametro) =>{
@@ -368,6 +371,9 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         div.appendChild(divCard);
                         divCard.id = "elemento"
+
+
+                        
                         // const div = document.createElement("div").className("card");
                         // div.innerHTML = element.precio                        
                         // document.body.appendChild(div);                        

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(162, 162, 162);
+        }
+        .container{
+            margin: auto;
+            background: white;
+            width: 800px;
+        }
+        ul, li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .slider{
+            position: relative;
+            width: 800px;
+            height: 300px
+        }
+        ul.slider li {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            transition: opacity .3s;
+        }
+        ul.slider li img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+        }
+        ul.slider li:first-child{
+            opacity: 1;
+        }
+        
+        ul.slider li:target{
+            opacity: 1;
+        }
+
+        .menu{
+            text-align:center;
+            margin: 20px;
+        }
+        .menu li{
+            display: inline-block;
+            text-align:center;
+        }
+        .menu li a{
+            display: inline-block;
+            color: white;
+            background-color:grey;
+            padding:10px;
+            text-decoration:none;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="slider">
+            <li id="photo1"><img src="./fotosProductos/memoriaRam1.jpg" alt=""></li>
+            <li id="photo2"><img src="./fotosProductos/memoriaRam2.jpg" alt=""></li>
+            <li id="photo3"><img src="./fotosProductos/memoriaRam3.jpg" alt=""></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#photo1">1</a></li>
+            <li><a href="#photo2">2</a></li>
+            <li><a href="#photo3">3</a></li>
+        </ul>
+    </div>
+</body>
+</html>

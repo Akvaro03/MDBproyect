@@ -93,15 +93,6 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         imgOverlay.alt = "Logo Javascript";
                         divOverlay.appendChild(imgOverlay);
 
-                        const aOverlay = document.createElement("a");
-                        aOverlay.href = "#!";
-
-                        let divA = document.createElement("div");
-                        divA.classList.add("mask");
-                        divA.classList.add("rgba-white-slight");
-                        aOverlay.appendChild(divA);
-
-                        divOverlay.appendChild(aOverlay);
                         divCard.appendChild(divOverlay);
                         // FIN FOTO PRODUCTO
 
@@ -135,33 +126,25 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoContenido.classList.add("row");
                             divProductoContenido.classList.add("container-fluid");
 
-                            let divProductoTitulo = document.createElement("h1");
-                            divProductoTitulo.classList.add("responsive-font-example");
-                            divProductoTitulo.classList.add("text-center");
-                            divProductoTitulo.classList.add("mt-5");
-                            divProductoTitulo.classList.add("pt-5");
-                            divProductoTitulo.textContent = "Esta parte esta en proceso";
-                            divProductoTitulo.classList.add("col-md-12");
+                            let divProductoTitulo = document.createElement("img");
+                            divProductoTitulo.src = foto;
+                            divProductoTitulo.classList.add("col-md-5");
                             divProductoTitulo.classList.add("col-12");
-
-                            let divProductoTitulo2 = document.createElement("p");
-                            divProductoTitulo2.classList.add("responsive-font-example2");
-                            divProductoTitulo2.classList.add("text-center");
-                            divProductoTitulo2.classList.add("mt-5");
-                            divProductoTitulo2.classList.add("pt-5");
-                            divProductoTitulo2.textContent = "Tocar afuera para salir";
-                            divProductoTitulo2.classList.add("col-md-12");
-                            divProductoTitulo2.classList.add("col-12");
+                            divProductoTitulo.classList.add("ml-3");
+                            divProductoTitulo.classList.add("mx-5");
 
 
                             // imgProducto.classList.add("fotoProducto");
                             // imgProducto.src = foto;
 
 
-                            // let divProductoTitulo = document.createElement("h1");
-                            // divProductoTitulo.classList.add("responsive-font-example");
-                            // divProductoTitulo.classList.add("mt-5");
-                            // divProductoTitulo.textContent = nombre;
+                            let divProductoTitulo2 = document.createElement("h1");
+                            divProductoTitulo2.classList.add("col-md-5");
+                            divProductoTitulo2.classList.add("col-12");
+
+                            divProductoTitulo2.classList.add("responsive-font-example");
+                            divProductoTitulo2.classList.add("mt-5");
+                            divProductoTitulo2.textContent = nombre.toUpperCase();
 
                             divProductoContenido.appendChild(divProductoTitulo);
                             divProductoContenido.appendChild(divProductoTitulo2);
@@ -296,15 +279,6 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         imgOverlay.alt = "Logo Javascript";
                         divOverlay.appendChild(imgOverlay);
 
-                        const aOverlay = document.createElement("a");
-                        aOverlay.href = "#!";
-
-                        let divA = document.createElement("div");
-                        divA.classList.add("mask");
-                        divA.classList.add("rgba-white-slight");
-                        aOverlay.appendChild(divA);
-
-                        divOverlay.appendChild(aOverlay);
                         divCard.appendChild(divOverlay);
                         // FIN FOTO PRODUCTO
 
@@ -338,12 +312,19 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             divProductoContenido.classList.add("row");
                             divProductoContenido.classList.add("container-fluid");
 
-                            let divProductoTitulo = document.createElement("h1");
-                            divProductoTitulo.classList.add("responsive-font-example");
-                            divProductoTitulo.classList.add("text-center");
-                            divProductoTitulo.classList.add("mt-5");
-                            divProductoTitulo.classList.add("pt-5");
-                            divProductoTitulo.textContent = "Esta parte esta en proceso";
+                            // const imgOverlay = document.createElement("img");
+                            // imgOverlay.classList.add("card-img-top");
+                            // imgOverlay.src = foto;
+                            // imgOverlay.alt = "Logo Javascript";
+                            // divOverlay.appendChild(imgOverlay);
+    
+                            let divProductoTitulo = document.createElement("img");
+                            divProductoTitulo.src = foto;
+                            // divProductoTitulo.classList.add("responsive-font-example");
+                            // divProductoTitulo.classList.add("text-center");
+                            // divProductoTitulo.classList.add("mt-5");
+                            // divProductoTitulo.classList.add("pt-5");
+                            // divProductoTitulo.textContent = "Esta parte esta en proceso";
                             divProductoTitulo.classList.add("col-md-12");
                             divProductoTitulo.classList.add("col-12");
 

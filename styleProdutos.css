@@ -1,3 +1,5 @@
+
+
 .navbar {
   background-color: transparent; 
 }
@@ -538,14 +540,15 @@ body{
   margin-top: 0px;
   margin-bottom: 0px;
   z-index: 30;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  /* grid-template-columns: 2fr 1fr; */
   color: white;
-  
+  justify-content: space-between;
+  align-items: baseline
 }
 
-{
-  
+.categorias div:nth-child(2){
+  padding-right: 38px;
 }
 
 .categorias p{
@@ -572,9 +575,9 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 37px;
+  font-size: 46px;
   z-index: 30;
-  padding-top: 15px;
+  padding-top: 24px;
 }
 
 .categorias{
@@ -979,182 +982,229 @@ body{
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
 
-.contenedor {
-    position: relative;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
 
-.contenedor .carta {
-    position: relative;
-    width: 320px;
-    height: 450px;
-    background: #232323;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.contenedor .carta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1BBFE9;
-    clip-path: circle(150px at 80% 20%);
-    transition: 0.5s ease-in-out;
-}
-
-.contenedor .carta:hover:before {
-    clip-path: circle(300px at 80% -20%);
-}
-
-.contenedor .carta:after {
-    content: "Nike";
-    position: absolute;
-    top: 30%;
-    left: -20%;
-    font-size: 12em;
-    font-weight: 800;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.04);
-
-}
-
-.contenedor .carta .imgBx {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-}
-
-.contenedor .carta:hover .imgBx {
-    top: 0%;
-    transform: translateY(-25%);
-    /* bug  */
-}
-
-.contenedor .carta .imgBx img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(20deg);
-    width: 270px;
-}
-
-.contenedor .carta .contentBx {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    transition: 1s;
-    z-index: 90;
-}
-
-.contenedor .carta:hover .contentBx {
-    height: 210px;
-}
-
-.contenedor .carta .contentBx h2 {
-    position: relative;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.contenedor .carta .contentBx .size,
-.contenedor .carta .contentBx .color {
+  /* * {
+    margin: 0;
+    padding: 0;
+    font-family: "Istok Web", sans-serif;
+  }
+  
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
-    transition: .5s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.contenedor .carta:hover .contentBx .size {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .5s;
-}
-
-.contenedor .carta:hover .contentBx .color {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: .6s;
-}
-
-.contenedor .carta .contentBx .size h3,
-.contenedor .carta .contentBx .color h3 {
-    color: white;
-    font-weight: 300;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 10px;
-}
-
-.contenedor .carta .contentBx .size span {
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
-    font-size: 14px;
-    display: inline-block;
-    color: #111;
-    background: #fff;
-    margin: 0 5px;
-    transition: .5s;
-    color: #111;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.contenedor .carta .contentBx .size span:hover {  /* other bug */
-    background: #B90000;
-}
-
-.contenedor .carta .contentBx .color span {
-    width: 20px;
-    height: 20px;
-    background: #ff0;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.contenedor .carta .contentBx .color span:nth-child(2) {
-     background: #1BBFE9;
-}
-
-.contenedor .carta .contentBx .color span:nth-child(3) {
-     background: #1B2FE9;
-}
-
-.contenedor .carta .contentBx .color span:nth-child(4) {
-     background: #080481;
-}
-
-.contenedor .carta .contentBx a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fff;
-    border-radius: 4px;
-    margin-top: 10px;
-    text-decoration: none;
+    min-height: 100vh;
+    background: #212121;
+  } */
+  
+  .carta {
+    position: relative;
+    /* width: 320px; */
+    height: 450px;
+    background: #191919;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin: 150px; */
+  }
+  
+  .carta::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #ffdc40bd;
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+  
+  .carta:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+  }
+  
+  .carta::after {
+    content: "CORSAIR";
+    position: absolute;
+    bottom: 0;
+    left: 0;
     font-weight: 600;
-    color: #111;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .carta .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+  }
+  /*
+  .carta .imgBox img {
+      max-width: 100%;
+      
+      transition: .5s;
+  }
+  
+  .carta:hover .imgBox img {
+      max-width: 50%;
+        
+  }
+  */
+  .carta .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .carta .contentBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .carta .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .carta .contentBox .buy {
+    position: relative;
+    top: 100px;
     opacity: 0;
-    transform: translateY(50px);
-    transition: .5s;
-}
-
-.contenedor .carta:hover .contentBx a {
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #ffce00;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  
+  .carta:hover .contentBox .buy {
+    top: 0;
     opacity: 1;
-    transform: translateY(0px);
-    transition-delay: .7s;
-} 
+  }
+  
+  .carta:hover .mouse{
+    transform: translateY(-13%);
+    transition: all 0.5s ease-out;
+  }
+
+  .mouse {
+    width: 97%;
+    transition: all 0.5s ease-out;
+  }
+  
+  .active {
+    background-color: #04293ae5;
+  }
+
+  .marca {
+    padding-left: 5%;
+  }
+  #menu{
+    list-style: none;
+    padding: 0;
+  }
+  #menu li>a{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    /* display: block; */
+    text-decoration: none;
+    min-width: 100px;
+    width: 100%;
+  }
+  #menu li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    text-align:center
+  }
+  #menu>li>div>div{
+    /* left: 0px; */
+    list-style: none;
+    transition: visibility 0s, opacity 0.9s linear;
+    position: absolute !important;
+    /* transform: translate(-100%, 0) */
+  }
+  #menu>li:hover>div{
+    /* left: 0px; */
+    transition: all 0s, opacity 0.9s linear;
+    /* transition: all 0.5s ease-out; */
+  }
+  .btn{
+    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 46%), 0 2px 10px 0 rgb(0 0 0 / 42%)
+  }
+  /* #menu>li>div:nth-child(2){
+    top: -500;
+  } */
+
+  .btn1{
+    left: -20px;
+  }
+  ul, ol {
+    list-style:none;
+  }
+
+  .nav22 > li {
+    float:left;
+    width: 100%;
+    
+  }
+  .nav22{
+    width: 100%;
+    padding: 0;
+  }
+  .nav22 li .button {
+    width: 100%;
+    border: 2px solid #ffa000 !important;
+    text-decoration:none;
+    padding:10px 12px;
+    display: flex;
+    justify-content: center;
+    color: #ffa000;
+    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 46%), 0 2px 10px 0 rgb(0 0 0 / 42%);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin: 0.375rem;
+  }
+  
+  .nav22 li ul {
+    /* background: white; */
+  }
+  
+  .nav22 li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .nav22 li:hover > ul {
+    display:block;
+  }
+  
+  .nav22 li ul li {
+    position:relative;
+  }
+  
+  .nav22 li ul li ul {
+    right:-140px;
+    top:0px;
+  }

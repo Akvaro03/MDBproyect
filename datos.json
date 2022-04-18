@@ -62,7 +62,7 @@
     "powers": "violar",
     "category": "mother_amd",
     "precio": 6450,
-    "foto": "./fotosProductos/motherAmd1.jpg"
+    "foto": "./fotosProductos/motherAmd1.png"
 },
 {
     "name": "Mother Gigabyte GA-A320M-S2H",
@@ -71,7 +71,7 @@
     "powers": "violar",
     "category": "mother_amd",
     "precio": 7870,
-    "foto": "./fotosProductos/motherAmd2.jpg"
+    "foto": "./fotosProductos/motherAmd2.png"
 },
 
 {
@@ -81,7 +81,7 @@
     "powers": "violar",
     "category": "mother_amd",
     "precio": 58490,
-    "foto": "./fotosProductos/motherAmd3.jpg"
+    "foto": "./fotosProductos/motherAmd3.png"
 },
 {
     "name": "Mother ASUS ROG MAXIMUS Z690",
@@ -90,7 +90,7 @@
     "powers": "violar",
     "category": "mother_intel",
     "precio": 295040,
-    "foto": "./fotosProductos/motherIntel1.jpg"
+    "foto": "./fotosProductos/motherIntel1.png"
 },
 {
     "name": "Mother Gigabyte H410M H V3 S1200",
@@ -99,7 +99,7 @@
     "powers": "violar",
     "category": "mother_intel",
     "precio": 11890,
-    "foto": "./fotosProductos/motherIntel2.jpg"
+    "foto": "./fotosProductos/motherIntel2.png"
 },
 
 {
@@ -109,7 +109,7 @@
     "powers": "violar",
     "category": "mother_intel",
     "precio": 8796,
-    "foto": "./fotosProductos/motherIntel3.jpg"
+    "foto": "./fotosProductos/motherIntel3.png"
 },
 {
     "name": "Memoria GeiL DDR4 16GB 3000MHz",
@@ -127,7 +127,7 @@
     "powers": "violar",
     "category": "memoria_ram",
     "precio": 3488,
-    "foto": "./fotosProductos/memoriaRam2.jpg"
+    "foto": "./fotosProductos/memoriaRam2.png"
 },
 {
     "name": "Memoria Adata DDR4 8GB 2666MHz",
@@ -136,7 +136,7 @@
     "powers": "violar",
     "category": "memoria_ram",
     "precio": 6080,
-    "foto": "./fotosProductos/memoriaRam3.jpg"
+    "foto": "./fotosProductos/memoriaRam3.png"
 },
 {
     "name": "Memoria Adata DDR4 16GB 2666Mhz",
@@ -145,7 +145,7 @@
     "powers": "violar",
     "category": "memoria_soddimm",
     "precio": 8990,
-    "foto": "./fotosProductos/memoriaSodimm1.jpg"
+    "foto": "./fotosProductos/memoriaSodimm1.png"
 },
 {
     "name": "Memoria Team DDR4 16GB (2x8GB) 3200MHz",
@@ -154,7 +154,7 @@
     "powers": "violar",
     "category": "memoria_soddimm",
     "precio": 11360,
-    "foto": "./fotosProductos/memoriaSodimm2.jpg"
+    "foto": "./fotosProductos/memoriaSodimm2.png"
 },
 {
     "name": "Memoria Team DDR4 32GB (2x16GB) 3200MHz",
@@ -163,7 +163,7 @@
     "powers": "violar",
     "category": "memoria_soddimm",
     "precio": 20420,
-    "foto": "./fotosProductos/memoriaSodimm3.jpg"
+    "foto": "./fotosProductos/memoriaSodimm3.png"
 }
 
 ]

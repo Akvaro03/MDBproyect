@@ -588,7 +588,7 @@ body{
 
 .categorias{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: start;  
 }
 
@@ -1002,7 +1002,7 @@ body{
   .carta {
     position: relative;
     /* width: 320px; */
-    height: 450px;
+    height: 500px;
     background: #191919;
     border-radius: 10px;
     overflow: hidden;

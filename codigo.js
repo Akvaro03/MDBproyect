@@ -1,11 +1,14 @@
-//url del json
+//url del json de los objetos
 const requestURL = 'datos.json';
-//buscar productos
+
+//definicion de variables
 var categoriaBuscador = "";
 var numeroBuscador = 1;
 let existencia = 1;
 let cantidadDeTarjetas = 0;
+let buttonCarrito;
 
+// funcion principal para buscar y mostrar los objetos
 async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
     async function toJSon(data){
         // Menor precio
@@ -71,7 +74,6 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                     div.innerHTML="";
                     objetosPorMenor.forEach(element => {
                         cantidadDeTarjetas ++;
-                        console.log(cantidadDeTarjetas)
                         const nf = new Intl.NumberFormat("es-AR");
 
                         let nombre = element.name;
@@ -104,7 +106,8 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         let enlace = document.createElement('a');
                         enlace.classList.add("buy");
-                        enlace.textContent = "Buy Now"
+                        enlace.id = precio;
+                        enlace.textContent = "Agregar al carrito"
 
                         divContenido.appendChild(titulo);
                         divContenido.appendChild(contenido);
@@ -117,16 +120,25 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         // const div = document.createElement("div").className("card");
                         // div.innerHTML = element.precio                        
-                        // document.body.appendChild(div);                        
+                        // document.body.appendChild(div);   
+                        buttonCarrito = document.querySelectorAll("buy");          
+                        buttonCarrito.forEach((element) => {
+                            console.log(element)
+                            element.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                console.log(e.target)
+                            })
+                        })
+
                     })  
+                    buttonCarrito = document.querySelectorAll(".buy");   
+                    agregarFuncionesCarrita(buttonCarrito)
                 }
                 escribir()
 
         
-                console.log(objetosPorMenor)    
-
             }    
-            porMenor()
+            porMenor();
         }
         // mayor precio
         if(filtroPrecio == 2) {
@@ -193,7 +205,6 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                     div.innerHTML="";
                     objetosPorMayor.forEach(element => {
                         cantidadDeTarjetas ++;
-                        console.log(cantidadDeTarjetas)
 
                         const nf = new Intl.NumberFormat("es-AR");
 
@@ -240,13 +251,25 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         // const div = document.createElement("div").className("card");
                         // div.innerHTML = element.precio                        
-                        // document.body.appendChild(div);                        
+                        // document.body.appendChild(div);      
+                        buttonCarrito = document.querySelectorAll("buy");          
+                        buttonCarrito.forEach((element) => {
+                            console.log(element)
+                            element.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                console.log(e.target)
+                            })
+                        })                  
                     })  
                 }
+                buttonCarrito = document.querySelectorAll(".buy");   
+                agregarFuncionesCarrita(buttonCarrito)
+
                 escribir()       
 
             }
-            
+            buttonCarrito = document.querySelectorAll("buy");          
+
             porMayor()
         }
 
@@ -257,11 +280,12 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
     .then(json => toJSon(json))
     
 
-
-
+    
 }
+//mostrar los objetos por defecto
 buscar(categoriaBuscador, numeroBuscador);
 
+//busca segun la categoria y el ordenar
 function preBuscar (opcion) {
     let numero = opcion.value;
     console.log(categoriaBuscador);
@@ -276,7 +300,6 @@ function preBuscar (opcion) {
 
     buscar(categoriaBuscador, numero);
 }
-
 function cambiarVariable (opcion) {
     categoriaBuscador = opcion
     console.log(categoriaBuscador);
@@ -291,43 +314,27 @@ function cambiarVariable (opcion) {
 
     buscar(categoriaBuscador, numeroBuscador);
 }
-// let divIntento = document.getElementById("elemento");
 
-// document.addEventListener('click', e => {
-//     if(divIntento.classList.contains('intento')) {
-//         console.log("hola")
-//     }
-let divImportante;
-let botonDiv;
-let numero = 0;
-let residuo = 0;
-let nosee = document.getElementById("noseeeee")
-// })
-document.addEventListener('click', e => {
-    if(existencia == 2) {
-    divImportante = document.querySelector(".divProducto")
-    botonDiv = document.querySelector(".botonCard")
-    // console.log(botonDiv)
-    // console.log(e.target)
-    // console.log(e.target == botonDiv)
-        if (            
-            e.target != divImportante
-            // Ni en uno de sus hijos
-            && e.target !== botonDiv
-            && !divImportante.contains(e.target)) {
-            numero++ 
-            residuo = numero % 2
-            console.log(residuo)
-            if (residuo == 0) {
-                // existencia = 1
-                divImportante.classList.add("estiloNose");
-                setTimeout(function(){
-                    nosee.removeChild(nosee.lastChild); 
-                },190);
-                                
-            }
-        }
-    }
-
+var inicio = document.getElementById("inicio");
+inicio.addEventListener('click', function() {
+    window.location.href = "index.html";
 })
 
+
+let agregarAlCarrito = () => {
+
+}
+console.log(localStorage)
+// localStorage.setItem('Nombre', 'asdasd')
+console.log(localStorage)
+
+
+
+let agregarFuncionesCarrita = (element) => {
+    element.forEach((element) => {
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(e.target.id)
+    })
+})
+}

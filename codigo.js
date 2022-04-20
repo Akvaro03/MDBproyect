@@ -4,6 +4,7 @@ const requestURL = 'datos.json';
 var categoriaBuscador = "";
 var numeroBuscador = 1;
 let existencia = 1;
+let cantidadDeTarjetas = 0;
 
 async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
     async function toJSon(data){
@@ -69,6 +70,8 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 function escribir() {
                     div.innerHTML="";
                     objetosPorMenor.forEach(element => {
+                        cantidadDeTarjetas ++;
+                        console.log(cantidadDeTarjetas)
                         const nf = new Intl.NumberFormat("es-AR");
 
                         let nombre = element.name;
@@ -93,11 +96,11 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         divContenido.classList.add("contentBox");
 
                         let titulo = document.createElement('h3');
-                        titulo.textContent = "Mouse Corsair M65"
+                        titulo.textContent = nombre
 
                         let contenido = document.createElement('h2');
                         contenido.classList.add("price");
-                        contenido.textContent = "$61"
+                        contenido.textContent = `$${precio}`
 
                         let enlace = document.createElement('a');
                         enlace.classList.add("buy");
@@ -189,6 +192,9 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                 function escribir() {
                     div.innerHTML="";
                     objetosPorMayor.forEach(element => {
+                        cantidadDeTarjetas ++;
+                        console.log(cantidadDeTarjetas)
+
                         const nf = new Intl.NumberFormat("es-AR");
 
                         let nombre = element.name;
@@ -261,12 +267,28 @@ function preBuscar (opcion) {
     console.log(categoriaBuscador);
     numeroBuscador = opcion.value;
     console.log(numeroBuscador)
+    cantidadDeTarjetas = 0
+
+    if (cantidadDeTarjetas <= 4) {
+        console.log("hola")
+        document.body.style.height = "20%";
+    }
+
     buscar(categoriaBuscador, numero);
 }
 
 function cambiarVariable (opcion) {
     categoriaBuscador = opcion
     console.log(categoriaBuscador);
+    cantidadDeTarjetas = 0
+
+    if (cantidadDeTarjetas <= 4) {
+        console.log("hola")
+        document.getElementById("circulo1").style.height = "50%";
+        document.getElementById("circulo1").style.width = "50%";
+        // document.body.style.height = "100vh";
+    }
+
     buscar(categoriaBuscador, numeroBuscador);
 }
 // let divIntento = document.getElementById("elemento");
@@ -309,19 +331,3 @@ document.addEventListener('click', e => {
 
 })
 
-
-// var divPrincipal = document.getElementById("noseeeee");
-
-// divPrincipal.addEventListener('click', function() {
-//   console.log("hola")
-// })
-
-
-var holaaaa = document.getElementById("productos22");
-holaaaa.addEventListener('click', function() {
-  window.location.href = "index.html";
-})
-
-let mostrarObjeto = () => {
-    console.log("Mostrar")
-}

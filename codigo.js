@@ -7,7 +7,8 @@ var numeroBuscador = 1;
 let existencia = 1;
 let cantidadDeTarjetas = 0;
 let buttonCarrito;
-
+let contadorCarrito = 0;
+let carrito = document.getElementById("carrito")
 // funcion principal para buscar y mostrar los objetos
 async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
     async function toJSon(data){
@@ -81,6 +82,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                         precio = nf.format(precio)
                         let categoria = element.category;
                         let foto = element.foto;
+                        let id = element.id;
 
                         let divPrincipal = document.createElement('div');
                         divPrincipal.classList.add("carta");
@@ -106,7 +108,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
 
                         let enlace = document.createElement('a');
                         enlace.classList.add("buy");
-                        enlace.id = precio;
+                        enlace.id = id;
                         enlace.textContent = "Agregar al carrito"
 
                         divContenido.appendChild(titulo);
@@ -126,7 +128,7 @@ async function buscar(category, filtroPrecio){ //categoria, filtroPrecio
                             console.log(element)
                             element.addEventListener("click", (e) => {
                                 e.preventDefault();
-                                console.log(e.target)
+                                console.log(e.target.id)
                             })
                         })
 
@@ -315,26 +317,43 @@ function cambiarVariable (opcion) {
     buscar(categoriaBuscador, numeroBuscador);
 }
 
-var inicio = document.getElementById("inicio");
+let inicio = document.getElementById("inicio");
 inicio.addEventListener('click', function() {
     window.location.href = "index.html";
 })
 
-
-let agregarAlCarrito = () => {
-
-}
-console.log(localStorage)
-// localStorage.setItem('Nombre', 'asdasd')
-console.log(localStorage)
-
-
+const listaProducto = document.querySelector("#lista-carrito tbody");
 
 let agregarFuncionesCarrita = (element) => {
     element.forEach((element) => {
     element.addEventListener("click", (e) => {
         e.preventDefault();
+        document.createDocumentFragment
+        contadorCarrito ++
+        console.log(contadorCarrito);
         console.log(e.target.id)
+        let producto = e.target.parentElement.parentElement
+        leerDatosProducto(producto)
     })
 })
+}
+let leerDatosProducto = (poducto) => {
+    console.log(poducto.querySelector('.price').textContent);
+    const infoProduto = {
+        titulo: poducto.querySelector('h3').textContent,
+        price: poducto.querySelector('.price').textContent,
+        id: poducto.querySelector('.buy').id
+    }
+    insertarCarrito(infoProduto)
+}
+let insertarCarrito = (element) => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+       <td>${element.titulo}</td>
+       <td>${element.price}</td>
+       <td>
+        <a href="#" class="borrar-platillo" data-id="${element.id}">X</a>
+       </td>
+    `;
+    listaProducto.appendChild(row);
 }

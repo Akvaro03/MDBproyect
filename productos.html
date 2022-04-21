@@ -100,8 +100,26 @@
         <div>
           <p >Productos</p>
         </div>
-        <div>
-          <i class="fas fa-cart-arrow-down fa-lg"></i>
+        <div style="display: block; position: relative;" id="divCarrito">
+          <p id="numeroCarrito">1</p>
+          <i  class="fas fa-cart-arrow-down fa-lg"></i>
+          <div id="carrito">
+            <p class="carritoTitulo">Carrito</p>
+            <table id="lista-carrito" class="u-full-width container">
+                <thead class="container">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <a href="#" id="vaciar-carrito"
+            class="button u-full-width">vaciar carrito</a>
+        </div>
+
         </div>
       </div>
     </nav>
